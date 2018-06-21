@@ -54,6 +54,25 @@ diff -ruN a/hdfs-site.xml b/hdfs-site.xml
 +   <final>true</final>
 +  </property>
 +
++  <property>
++    <name>dfs.replication</name>
++    <value>DFS_REPLICATION</value>
++    <description>HDFS is partly designed to allow storage failures and uses
++       replication for this. Since either your data on myhadoop jobs is only 
++       supposed to live through a single run or you can use persistent data
++       that will most likely run on solid hardware it is quite save to keep
++       replication at 1 and reduce the IO overhead.
++    </description>
++  </property>
++
++  <property>
++    <name>dfs.blocksize</name>
++    <value>DFS_BLOCK_SIZE</value>
++    <description>The HDFS block size defines the size of the parts in which 
++       the HDFS files will be divided and distributed over the data nodes.
++  </description>
++  </property>
++
  </configuration>
 diff -ruN a/mapred-site.xml b/mapred-site.xml
 --- a/mapred-site.xml	1969-12-31 16:00:00.000000000 -0800
