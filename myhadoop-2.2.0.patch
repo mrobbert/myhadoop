@@ -20,7 +20,7 @@ diff -ruN a/core-site.xml b/core-site.xml
 diff -ruN a/hdfs-site.xml b/hdfs-site.xml
 --- a/hdfs-site.xml	2014-03-30 10:25:24.420801062 -0700
 +++ b/hdfs-site.xml	2014-03-30 11:42:31.974815902 -0700
-@@ -18,4 +18,34 @@
+@@ -18,4 +18,53 @@
  
  <configuration>
  
